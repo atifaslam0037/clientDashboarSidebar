@@ -1,0 +1,115 @@
+
+.cloe-side{
+    float: right;   
+    cursor: pointer;
+    padding: 6px 10px;  
+    margin-bottom: 1.5 rem;
+}
+.aside-bar{
+    display: flex;
+    width: auto;
+    background: #fff;
+    width: fit-content;
+}
+.aside-bar ul{
+    margin: 0;
+    padding: 0 1px 0 0;
+    list-style: none;
+}
+.aside-bar ul.buttons-container{
+    background: #00AEEF;
+
+}
+.aside-bar #buttons-container button{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    background: #00AEEF;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 15px;
+    text-align: center;
+    text-wrap: wrap;
+    border: 0.5px solid #FFFFFF !important;
+    border-left:none !important;
+    border-right:none !important;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.aside-bar #buttons-container li button:first-child{
+    border-top: none;
+}
+.aside-bar #buttons-container li button:first-child{
+    border-bottom: none;
+}
+.aside-bar #buttons-container li button:is(:hover, :active, .active){
+    background: #FFFFFF;
+    color: #000;
+}
+.aside-bar #buttons-container button img{
+    width: 38px;
+    height: 38px;
+    object-fit: contain; 
+}
+.aside-bar #buttons-container li button:is(:hover, :active, .active) img{
+    filter: invert(1);
+}
+
+.aside-bar .side-stiky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 2rem;
+}
+
+.aside-bar #toggle-side.side-content{
+    display: block;
+    box-shadow: 4px 4px 4px 0px #0000001a;
+    padding: 1rem 0.25rem ;
+    min-width: 250px;
+}
+.aside-bar .sidebar-content{
+    overflow-x: hidden;
+}
+.aside-bar #sidebar-content-container{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.aside-bar #sidebar-content-container li{
+    width: 100%;
+}
+.aside-bar #sidebar-content-container .drop-list{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.79px;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.aside-bar #sidebar-content-container .drop-list:is(:hover, :active, .active){
+    color: #00AEEF;
+}
+
+.menu-icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 4 / 4;
+    object-fit: cover;
+}
